@@ -63,7 +63,9 @@ const newYear = () => {
   let dateNow = new Date().getTime();
   let timeRemaining = (dateStop - dateNow) / 1000;
   toNewYear.textContent =
-    "До нового года осталось: " + Math.floor(timeRemaining / 60 / 60 / 24);
+    "До нового года осталось: " +
+    Math.floor(timeRemaining / 60 / 60 / 24) +
+    " дней";
 };
 
 timesOfDay();
